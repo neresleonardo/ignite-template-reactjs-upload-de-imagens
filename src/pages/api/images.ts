@@ -2,7 +2,9 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import fauna from 'faunadb';
 
 const { query } = fauna;
-const client = new fauna.Client({ secret: process.env.FAUNA_API_KEY });
+const client = new fauna.Client({
+  secret: 'fnAEha_yNOACT_jX2Ntx6exy0MRcuG9k302FSTg4',
+});
 
 interface ImagesQueryResponse {
   after?: {
